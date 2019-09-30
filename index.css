@@ -123,7 +123,7 @@ html {
   padding: 10px;
 }
 */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* Five image containers (width looks best at 15% so far) */
 .column {
   float: left;
   width: 15%;
