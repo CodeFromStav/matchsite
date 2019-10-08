@@ -2,7 +2,8 @@ html {
   height: 100%;  
   overflow: scroll;
   overflow-x:hidden;
-    font-family: Raleway
+    font-family: Raleway;
+    background-color: #F5F5F5;
     
 }
 ::-webkit-scrollbar {
@@ -157,3 +158,27 @@ html {
 #mytable .left {padding-left: 10px; width: 50px; text-align:right; }
 #mytable .center {padding-left: 40px; text-align:left; }
 #mytable .right {text-align:center; }
+
+.sideBySide
+{
+}
+
+.card {
+  padding: 40px;
+  background: #F5F5F5;
+  max-width: 80%;
+  border-radius: 20px;
+  margin: 60px auto;
+}
+.card2 {
+  padding: 40px;
+  background: #F5F5F5;
+  max-width: 100%;
+  border-radius: 20px;
+  margin: 60px auto;
+}
+
+.shadow1 { 
+  box-shadow: 0 5px 10px rgba(154,160,185, .1), 0 15px 40px rgba(166,173,201,.2);
+}
+
