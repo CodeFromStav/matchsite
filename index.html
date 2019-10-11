@@ -15,9 +15,11 @@
     
 <body>
     <div class="topnav" style="font-family: Raleway;">
-  <a class="topnavActive" href="index.html"style="font-family: RalewayBold;" id="logo">Match Source</a>
-  <a href="deliverables.html" id="deliverable">Deliverables</a>
-  <a href="aboutUs.html" id="aboutUs">About Us</a>
+  <a class="topnavActive" href="index.html"style="font-family: RalewayBold; " id="logo">Match Source</a>
+        <a class="topnav" href="aboutUs.html" style="text-align: right;
+    float: right;">About Us</a>
+  <a href="deliverables.html" id="deliverable" style="text-align: right;
+    float: right;">Deliverables</a>
     </div>
     
 <!--Messing with Logo Placement-->
@@ -27,36 +29,105 @@
 <br>
 <br>
 <br>
-<img src = "assets/logo.png" alt = "Logo" class = "topleft" style="position: center"> 
+<img src = "assets/logo.png" alt = "Logo" class = "topleft" style="position: center; width: 200px;height: auto"> 
     
 <table style="width:100%; margin:0 auto;">
     <tr>
         <td style="width: 40%">
-            <div class="card shadow1">
-        <h2 class="RalewayBold">The Problem</h2>
-        <p>Motivating newcomers to contribute to Open Source Software and retaining them in the project over time stubbornly remains a perennial weakness of OSS development.</p>
-    </div>
+            <div id="cardSmall" class="card shadow1">
+                
+                <h2 class="RalewayBold">
+                    The Problem
+                </h2>
+                
+                <p>
+                    Motivating newcomers to contribute to Open Source Software and retaining them in the project over time stubbornly remains a perennial weakness of OSS development.
+                </p>
+                
+                <p style="color: blue; cursor: pointer" onclick="myFunction()">
+                    MORE
+                </p>
+                
+            </div>
         </td>
         
         <td style="width: 40%">
-            <div class="card shadow1">
-        <h2 class="RalewayBold">The Solution</h2>
-        <p>Match Source will solve this by developing a robust mechanism for assessing and revealing the gap between a newcomer’s skills and the skills required for a particular project on its work list.</p>
-    </div>
+            
+            <div id="cardSmall2" class="card shadow1">
+                
+                <h2 class="RalewayBold">
+                    The Solution
+                </h2>
+                
+                <p>
+                    We will solve this by developing a robust mechanism for evaluate and reveal the gap between a newcomer’s skills and the skills required for a project on its work list.
+                </p>
+                
+                <p style="color: blue; cursor: pointer" onclick="myFunction2()">
+                    MORE
+                </p>
+                
+            </div>
         </td>
     </tr>
     
 </table>
-    
-    <div class="card2 shadow1" style="width: 90%">
-  <h2 class="RalewayBold">Our Goals</h2>
-<pre>Under Construction</pre>
+
+    <div class="card2 shadow1" style="width:90%">
+        <h2 class="RalewayBold">Our Client</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src = "SteinmacherPhoto.jpg" alt = "Logo" class = "topleft" style="position: center; width: 125px; height: auto; border-radius: 10px;">
+                </td>
+                <td style="vertical-align: top; padding-top: 20px; padding-left: 40px;">
+                    Our client is Dr Igor Steinmacher who completed his PhD in Computer Science at the University of São Paulo. Dr Steinmacher is an Assistant Professor/Researcher at Northern Arizona University who is currently working on helping support/motivate newcomers to contribute to Open Source Software. 
+                    <br>
+                    <br>
+                    <a href="https://www.igor.pro.br/" id="Igor Homepage">
+                        Link to Igor's Homepage
+                    </a>
+                </td>
+            </tr>
+        </table> 
+        
 </div>  
 
 <div class="footer">© Nothern Arizona University, Match Source</div>
 
 
-
+<script>
+    
+    function myFunction()
+    {
+        var cardSmall = document.getElementById("cardSmall");
+        if(cardSmall.classList.contains("card") == true)
+        {
+            cardSmall.classList.remove("card");
+            cardSmall.classList.add("cardBig");
+        }
+        else
+        {
+            cardSmall.classList.add("card");
+            cardSmall.classList.remove("cardBig");
+        }
+    }
+    
+    function myFunction2()
+    {
+        var cardSmall = document.getElementById("cardSmall2");
+        if(cardSmall.classList.contains("card") == true)
+        {
+            cardSmall.classList.remove("card");
+            cardSmall.classList.add("cardBig");
+        }
+        else
+        {
+            cardSmall.classList.add("card");
+            cardSmall.classList.remove("cardBig");
+        }
+    }
+</script>
     
     
 </body>
